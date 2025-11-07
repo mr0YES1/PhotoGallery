@@ -1,8 +1,11 @@
 import Header from "@/Components/Header";
+import { photos } from "@/Entities/Photo";
 
 
 export default function GalleryPage() {
   return (
-    <Header/>
+    <div>
+      <Header photoCount={photos.length}/>
+    </div>
   );
 }
