@@ -8,6 +8,7 @@ type HeaderProps = {
 export default function Header({ photoCount }: HeaderProps) {
   return (
     <header className="bg-white border-b border-gray-200">
+      
       <div className="max-w-[1400px] mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
         
@@ -76,6 +77,7 @@ export default function Header({ photoCount }: HeaderProps) {
               <Search className="w-5 h-5" />
             </Button>
           </div>
+
         </div>  
       </div>
 
