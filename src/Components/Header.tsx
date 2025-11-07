@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { Search, Upload } from "lucide-react";
 
 export default function Header() {
   return (
@@ -38,6 +39,39 @@ export default function Header() {
             </Button>
           </nav>
 
+          {/* Right side actions */}
+          <div className="flex items-center gap-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="hidden sm:flex text-sm font-normal text-gray-700 hover:text-black hover:bg-gray-50"
+            > 
+              <Upload className="w-4 h-4 mr-2" />
+              Upload
+            </Button>
+            <div className="h-6 w-px bg-gray-200 hidden sm:block" />
+            <Button 
+              variant="ghost"
+              size="sm"
+              className="text-sm font-normal text-gray-700 hover:text-black hover:bg-gray-50"
+            >
+              Sign In
+            </Button>
+            <Button 
+              variant="ghost"
+              size="sm"
+              className="text-sm font-normal text-gray-700 hover:text-black hover:bg-gray-50"
+            >
+              Become a Member
+            </Button>
+            <Button 
+              variant="ghost" 
+              size="icon"
+              className="text-gray-700 hover:text-black hover:bg-gray-50"
+            >
+              <Search className="w-5 h-5" />
+            </Button>
+          </div>
         </div>  
       </div>
     </header>
