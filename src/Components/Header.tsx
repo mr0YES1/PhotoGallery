@@ -15,9 +15,9 @@ export default function Header({ photoCount }: HeaderProps) {
           {/* Logo & Title */}
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-1">
-              <div className="w-3 h-3 bg-black rounded-sm" />
-              <div className="w-3 h-3 bg-gray-400 rounded-sm" />
-              <div className="w-3 h-3 bg-gray-300 rounded-sm" />
+              <div className="w-3 h-3 bg-black rounded" />
+              <div className="w-3 h-3 bg-gray-400 rounded" />
+              <div className="w-3 h-3 bg-gray-300 rounded" />
             </div>
             <h1 className="text-lg font-normal text-gray-900">Photo Gallery</h1>  
           </div>

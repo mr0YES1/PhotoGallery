@@ -1,5 +1,5 @@
-import {useState, useMemo, useEffect} from "react";
 import Header from "@/Components/Header";
+import {useState, useMemo, useEffect} from "react";
 import {photos, type Photo} from "@/Entities/Photo";
 import FilterBar from "@/Components/gallery/FilterBar";
 import PhotoGrid from "@/Components/gallery/PhotoGrid";
