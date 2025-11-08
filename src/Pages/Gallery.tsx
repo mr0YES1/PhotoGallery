@@ -1,4 +1,4 @@
-import {useState, useMemo} from "react";
+import {useState, useMemo, useEffect} from "react";
 import Header from "@/Components/Header";
 import {photos, type Photo} from "@/Entities/Photo";
 import FilterBar from "@/Components/gallery/FilterBar";
@@ -16,6 +16,19 @@ export default function GalleryPage() {
   const [sortOrder, setSortOrder] = useState(initialSort);
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
   
+  // Update URL when filters change
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (selectedCategory !== 'all') {
+      params.set('category', selectedCategory);
+    }
+    if (sortOrder !== '-created_date') {
+      params.set('sort', sortOrder);
+    }
+    const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
+    window.history.replaceState({}, '', newUrl);
+  }, [selectedCategory, sortOrder]);
+
   // Filter and sort photos
   const filteredPhotos = useMemo(() => {
     let filtered = photos.filter(photo => {
