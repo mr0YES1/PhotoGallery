@@ -1,5 +1,6 @@
 
 export type Photo = {
+    id: number;
     title: string;
     description: string;
     image_url: string;
@@ -11,6 +12,7 @@ export type Photo = {
 
 export const photos: Photo[] = [
     {
+      id: 1,
       title: "Street Portrait",
       description: "Candid moment captured in the city",
       image_url: "images/StreetPortrait.jpg",
@@ -20,6 +22,7 @@ export const photos: Photo[] = [
       created_date: "2025-11-6",        
     },
     {
+      id: 2,
       title: "City Skyline",
       description: "Urban landscape at dusk",
       image_url: "images/CitySkyline.jpg",
@@ -29,6 +32,7 @@ export const photos: Photo[] = [
       created_date: "2025-10-22", 
     },
     {
+      id: 3,
       title: "Fresh Sushi",
       description: "Traditional Japanese sushi platter",
       image_url: "images/FreshSushi.jpg",
@@ -38,6 +42,7 @@ export const photos: Photo[] = [
       created_date: "2025-09-15", 
     },
     {
+      id: 4,
       title: "Liquid Gold",
       description: "Abstract golden liquid patterns",
       image_url: "images/LiquidGold.jpg",
@@ -47,6 +52,7 @@ export const photos: Photo[] = [
       created_date: "2025-08-30", 
     },
     {
+      id: 5,
       title: "Tropical Paradise",
       description: "Crystal clear waters and palm trees",
       image_url: "images/TropicalParadise.jpg",
@@ -56,6 +62,7 @@ export const photos: Photo[] = [
       created_date: "2025-09-12", 
     },
     {
+      id: 6,
       title: "Yoga Session",
       description: "Peaceful meditation by the water",
       image_url: "images/YogaSession.jpg",
@@ -65,6 +72,7 @@ export const photos: Photo[] = [
       created_date: "2025-06-05", 
     },
     {
+      id: 7,
       title: "Modern Architecture",
       description: "Clean lines and geometric patterns in contemporary design",
       image_url: "images/ModernArchitecture.jpg",
@@ -74,6 +82,7 @@ export const photos: Photo[] = [
       created_date: "2025-07-20", 
     },
     {
+      id: 8,
       title: "Forest Trail",
       description: "Sunlight filtering through tall trees",
       image_url: "images/ForestTrail.jpg",
@@ -83,6 +92,7 @@ export const photos: Photo[] = [
       created_date: "2025-05-18", 
     },
     {
+      id: 9,
       title: "Watercolor Dreams",
       description: "Abstract watercolor blending",
       image_url: "images/WatercolorDreams.jpg",
@@ -92,6 +102,7 @@ export const photos: Photo[] = [
       created_date: "2025-10-10", 
     },
     {
+      id: 10,
       title: "Ocean Waves",
       description: "Powerful waves crashing on rocks",
       image_url: "images/OceanWaves.jpg",
@@ -101,6 +112,7 @@ export const photos: Photo[] = [
       created_date: "2025-08-01", 
     },
     {
+      id: 11,
       title: "Gourmet Dish",
       description: "Beautifully plated fine dining experience",
       image_url: "images/GourmetDish.jpg",
@@ -110,6 +122,7 @@ export const photos: Photo[] = [
       created_date: "2025-11-01", 
     },
     {
+      id: 12,
       title: "Mountain Sunrise",
       description: "Golden hour over snow-capped peaks",
       image_url: "images/MountainSunrise.jpg",
@@ -119,6 +132,7 @@ export const photos: Photo[] = [
       created_date: "2025-10-05", 
     },
     {
+      id: 13,
       title: "Abstract Patterns",
       description: "Colorful swirls and shapes in motion",
       image_url: "images/AbstractPatterns.jpg",
@@ -128,6 +142,7 @@ export const photos: Photo[] = [
       created_date: "2025-09-25", 
     },
     {
+      id: 14,
       title: "Glass Building",
       description: "Reflective modern office building",
       image_url: "images/GlassBuilding.jpg",
@@ -137,6 +152,7 @@ export const photos: Photo[] = [
       created_date: "2025-07-15", 
     },
     {
+      id: 15,
       title: "Ancient Ruins",
       description: "Historic architecture in Greece",
       image_url: "images/AncientRuins.jpg",
@@ -146,6 +162,7 @@ export const photos: Photo[] = [
       created_date: "2025-06-28", 
     },
     {
+      id: 16,
       title: "Family Portrait",
       description: "Joyful family moment outdoors",
       image_url: "images/FamilyPortrait.jpg",
