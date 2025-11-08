@@ -1,7 +1,9 @@
+import {useState, useMemo} from "react";
 import Header from "@/Components/Header";
 import { photos } from "@/Entities/Photo";
 import FilterBar from "@/Components/gallery/FilterBar";
-import {useState} from "react";
+import PhotoGrid from "@/Components/gallery/PhotoGrid";
+
 
 export default function GalleryPage() {
   
@@ -12,7 +14,34 @@ export default function GalleryPage() {
 
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [sortOrder, setSortOrder] = useState(initialSort);
+  const [selectedPhoto, setSelectedPhoto] = useState(null);
   
+  // Filter and sort photos
+  const filteredPhotos = useMemo(() => {
+    let filtered = photos.filter(photo => {
+      return selectedCategory === 'all' || photo.category === selectedCategory;
+    });
+
+    // Sort photos
+    filtered.sort((a, b) => {
+      if (sortOrder === '-created_date') {
+        return new Date(b.created_date).getTime() - new Date(a.created_date).getTime();
+      } 
+      else if (sortOrder === 'created_date') {
+        return new Date(a.created_date).getTime() - new Date(b.created_date).getTime();
+      }
+      else if (sortOrder === 'title') {
+        return a.title.localeCompare(b.title);
+      }
+      else if (sortOrder === '-title') {
+        return b.title.localeCompare(a.title);
+      }
+      return 0;
+    });
+    
+    return filtered;
+  }, [photos, selectedCategory, sortOrder]); 
+
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category);
   };
@@ -20,6 +49,10 @@ export default function GalleryPage() {
   const handleSortChange = (sort: string) => {
     setSortOrder(sort);
   };
+
+  const handlePhotoClick = (photo) => {
+    setSelectedPhoto(photo);
+  }; 
   
   return (
     <div className="min-h-screen bg-white">
@@ -34,6 +67,14 @@ export default function GalleryPage() {
         onCategoryChange={handleCategoryChange}
         onSortChange={handleSortChange}
       />
+
+      {/* Photo Grid */}
+      <div className="max-w-[1400px] mx-auto px-6 py-8">
+        <PhotoGrid
+          photos={filteredPhotos}
+          onPhotoClick={(handlePhotoClick)}
+        />
+      </div>
 
     </div>
   );
