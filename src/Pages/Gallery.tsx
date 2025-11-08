@@ -1,9 +1,9 @@
 import {useState, useMemo} from "react";
 import Header from "@/Components/Header";
-import { photos } from "@/Entities/Photo";
+import {photos, type Photo} from "@/Entities/Photo";
 import FilterBar from "@/Components/gallery/FilterBar";
 import PhotoGrid from "@/Components/gallery/PhotoGrid";
-
+import PhotoModal from "@/Components/gallery/PhotoModal";
 
 export default function GalleryPage() {
   
@@ -14,7 +14,7 @@ export default function GalleryPage() {
 
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [sortOrder, setSortOrder] = useState(initialSort);
-  const [selectedPhoto, setSelectedPhoto] = useState(null);
+  const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
   
   // Filter and sort photos
   const filteredPhotos = useMemo(() => {
@@ -50,9 +50,13 @@ export default function GalleryPage() {
     setSortOrder(sort);
   };
 
-  const handlePhotoClick = (photo) => {
+  const handlePhotoClick = (photo: Photo) => {
     setSelectedPhoto(photo);
-  }; 
+  };
+  
+  const handleCloseModal = () => {
+    setSelectedPhoto(null);
+  };
   
   return (
     <div className="min-h-screen bg-white">
@@ -76,6 +80,13 @@ export default function GalleryPage() {
         />
       </div>
 
+      {/* Photo Modal */}
+      {selectedPhoto && (
+        <PhotoModal
+          photo={selectedPhoto}
+          onClose={handleCloseModal}
+        />
+      )}
     </div>
   );
 }

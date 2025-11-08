@@ -29,7 +29,7 @@ export const photos: Photo[] = [
       category: "architecture",
       tags: ["city", "skyline", "dusk", "urban"],
       photographer: "Rachel Kim",
-      created_date: "2025-10-22", 
+      created_date: "2025-11-6", 
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export const photos: Photo[] = [
       category: "food",
       tags: ["sushi", "japanese", "seafood", "fresh"],
       photographer: "Yuki Tanaka",
-      created_date: "2025-09-15", 
+      created_date: "2025-11-6", 
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ export const photos: Photo[] = [
       category: "abstract",
       tags: ["gold", "liquid", "abstract", "luxury"],
       photographer: "Oliver Gold",
-      created_date: "2025-08-30", 
+      created_date: "2025-11-6", 
     },
     {
       id: 5,
@@ -59,7 +59,7 @@ export const photos: Photo[] = [
       category: "travel",
       tags: ["beach", "tropical", "vacation", "ocean"],
       photographer: "David Park",
-      created_date: "2025-09-12", 
+      created_date: "2025-11-6", 
     },
     {
       id: 6,
@@ -69,7 +69,7 @@ export const photos: Photo[] = [
       category: "people",
       tags: ["yoga", "meditation", "wellness", "peaceful"],
       photographer: "Nina Patel",
-      created_date: "2025-06-05", 
+      created_date: "2025-11-6", 
     },
     {
       id: 7,
@@ -79,7 +79,7 @@ export const photos: Photo[] = [
       category: "architecture",
       tags: ["modern", "building", "geometric", "urban"],
       photographer: "Mike Johnson",
-      created_date: "2025-07-20", 
+      created_date: "2025-11-6", 
     },
     {
       id: 8,
@@ -89,7 +89,7 @@ export const photos: Photo[] = [
       category: "nature",
       tags: ["forest", "trees", "hiking", "sunlight"],
       photographer: "Tom Anderson",
-      created_date: "2025-05-18", 
+      created_date: "2025-11-6", 
     },
     {
       id: 9,
@@ -99,7 +99,7 @@ export const photos: Photo[] = [
       category: "abstract",
       tags: ["watercolor", "art", "colorful", "creative"],
       photographer: "Jordan Lee",
-      created_date: "2025-10-10", 
+      created_date: "2025-11-6", 
     },
     {
       id: 10,
@@ -109,7 +109,7 @@ export const photos: Photo[] = [
       category: "nature",
       tags: ["ocean", "waves", "seascape", "dramatic"],
       photographer: "Chris Ocean",
-      created_date: "2025-08-01", 
+      created_date: "2025-11-6", 
     },
     {
       id: 11,
@@ -119,7 +119,7 @@ export const photos: Photo[] = [
       category: "food",
       tags: ["fine-dining", "gourmet", "plating", "restaurant"],
       photographer: "Lisa Martinez",
-      created_date: "2025-11-01", 
+      created_date: "2025-11-6", 
     },
     {
       id: 12,
@@ -129,7 +129,7 @@ export const photos: Photo[] = [
       category: "nature",
       tags: ["mountains", "sunrise", "landscape", "golden-hour"],
       photographer: "Sarah Chen",
-      created_date: "2025-10-05", 
+      created_date: "2025-11-6", 
     },
     {
       id: 13,
@@ -139,7 +139,7 @@ export const photos: Photo[] = [
       category: "abstract",
       tags: ["colorful", "patterns", "art", "creative"],
       photographer: "Alex Rivera",
-      created_date: "2025-09-25", 
+      created_date: "2025-11-6", 
     },
     {
       id: 14,
@@ -149,7 +149,7 @@ export const photos: Photo[] = [
       category: "architecture",
       tags: ["glass", "modern", "reflection", "office"],
       photographer: "Amanda Foster",
-      created_date: "2025-07-15", 
+      created_date: "2025-11-6", 
     },
     {
       id: 15,
@@ -159,7 +159,7 @@ export const photos: Photo[] = [
       category: "travel",
       tags: ["historic", "ruins", "greece", "ancient"],
       photographer: "Marco Santos",
-      created_date: "2025-06-28", 
+      created_date: "2025-11-6", 
     },
     {
       id: 16,
@@ -169,6 +169,6 @@ export const photos: Photo[] = [
       category: "people",
       tags: ["family", "outdoor", "happiness", "portrait"],
       photographer: "Sophie Brown",
-      created_date: "2025-05-22", 
+      created_date: "2025-11-6", 
     }, 
 ];
