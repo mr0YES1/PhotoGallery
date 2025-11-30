@@ -25,7 +25,7 @@ export default function PhotoModal({photo, onClose} : PhotoModalProps) {
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.95, opacity: 0 }}
           transition={{ type: "spring", damping: 30 }}
-          className="relative w-auto max-w-[90vw] bg-white overflow-hidden"
+          className="relative w-auto max-w-[90vw] max-h-[90vh] bg-white overflow-auto"
           onClick={(e) => e.stopPropagation()}
         >
           
