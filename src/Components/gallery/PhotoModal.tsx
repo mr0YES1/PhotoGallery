@@ -25,7 +25,7 @@ export default function PhotoModal({photo, onClose} : PhotoModalProps) {
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.95, opacity: 0 }}
           transition={{ type: "spring", damping: 30 }}
-          className="relative max-w-6xl w-full bg-white overflow-hidden"
+          className="relative w-auto max-w-[90vw] bg-white overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
           
@@ -40,11 +40,11 @@ export default function PhotoModal({photo, onClose} : PhotoModalProps) {
           </Button>
 
           {/* Image */}
-          <div className="relative w-full max-h-[70vh] overflow-hidden bg-gray-100">
+          <div className="w-full flex items-center justify-center bg-gray-100">
             <img
               src={photo.image_url}
               alt={photo.title}
-              className="w-full h-full object-contain"
+              className="max-h-[75vh] max-w-full object-contain"
             />
           </div>
 
